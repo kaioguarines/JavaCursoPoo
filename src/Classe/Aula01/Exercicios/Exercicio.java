@@ -5,6 +5,7 @@ import Classe.Aula01.Caneta;
 public class Exercicio {
     String Marca;
     String Modelo;
+    String Operacional;
     int Memoria;
     int MemoriaRam;
     int QuantasCam;
@@ -16,6 +17,7 @@ public class Exercicio {
         System.out.println("Memoria: "+ this.Memoria+ "GB" );
         System.out.println("Memoroia Ram: "+ this.MemoriaRam+ "GB" );
         System.out.println("Quantidade Camera: "+ this.QuantasCam );
+        System.out.println("Operacional: "+ this.Operacional);
         System.out.println("Valor R$"+ this.Valor );
     }
     void ligado(){

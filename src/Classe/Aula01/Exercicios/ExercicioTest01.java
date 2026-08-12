@@ -5,6 +5,7 @@ public class ExercicioTest01 {
         Exercicio Celular = new Exercicio();
         Celular.Marca ="Samsung";
         Celular.Modelo ="S26 Ultra";
+        Celular.Operacional = "Adroid";
         Celular.Memoria =1024;
         Celular.MemoriaRam =16;
         Celular.QuantasCam =5;
@@ -17,6 +18,7 @@ public class ExercicioTest01 {
         Exercicio Cell = new Exercicio();
         Cell.Marca ="Iphone";
         Cell.Modelo ="17 Promax";
+        Cell.Operacional = "Ios";
         Cell.Memoria =2048;
         Cell.MemoriaRam =12;
         Cell.QuantasCam =4;
