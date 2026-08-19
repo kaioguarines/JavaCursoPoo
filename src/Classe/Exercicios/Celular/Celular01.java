@@ -1,4 +1,4 @@
-package Classe.Exercicios;
+package Classe.Exercicios.Celular;
 
 public class Celular01 {
     private String marca;
