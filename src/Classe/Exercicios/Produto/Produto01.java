@@ -76,7 +76,8 @@ public class Produto01 {
             System.out.println("Quantidade invalida");
         }
     }
-    public float calcularValorEstoque(){
-        return  (getQuantidade() * getPreco());
+
+    public float calcularValorEstoque() {
+        return (getQuantidade() * getPreco());
     }
 }
