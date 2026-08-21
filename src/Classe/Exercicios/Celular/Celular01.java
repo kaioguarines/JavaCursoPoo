@@ -44,6 +44,7 @@ public class Celular01 {
     public void setLigado(boolean ligado) {
         this.ligado = ligado;
     }
+
     public void ligar() {
         if (getLigado()) {
             System.out.println("O celular já está ligado.");
@@ -51,6 +52,7 @@ public class Celular01 {
             setLigado(true);
         }
     }
+
     public void desligar() {
         if (!getLigado()) {
             System.out.println("O Celular esta desligado");
@@ -60,8 +62,7 @@ public class Celular01 {
     }
 
 
-
-    public void status(){
+    public void status() {
         System.out.println("Sobre o celular");
         System.out.println("Marca: " + this.getMarca());
         System.out.println("Modelo: " + this.getModelo());

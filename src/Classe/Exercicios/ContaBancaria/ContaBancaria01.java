@@ -7,7 +7,7 @@ public class ContaBancaria01 {
     private boolean ativa;
 
 
-    public ContaBancaria01(){
+    public ContaBancaria01() {
         this.titular = "Alexandre";
         this.numero = 1983;
         this.saldo = 0f;
@@ -15,19 +15,39 @@ public class ContaBancaria01 {
     }
 
 
-    public String  getTitular() { return  this.titular;}
-    public void setTitular(String titular) {this.titular = titular;}
+    public String getTitular() {
+        return this.titular;
+    }
 
-    public  int getNumero() { return  this.numero;}
-    public void setNumero(int numero) {this.numero = numero;}
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
 
-    public float getSaldo() {return  this.saldo;}
-    public void setSaldo(float saldo) {this.saldo = saldo;}
+    public int getNumero() {
+        return this.numero;
+    }
 
-    public boolean getAtiva() {return this.ativa;}
-    public void setAtiva(boolean ativa) {this.ativa = ativa;}
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
-    public void status(){
+    public float getSaldo() {
+        return this.saldo;
+    }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+
+    public boolean getAtiva() {
+        return this.ativa;
+    }
+
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
+    }
+
+    public void status() {
         System.out.println("Sobre a Conta Senhor: ");
         System.out.println("Titular: " + getTitular());
         System.out.println("Numero Da Conta: " + getNumero());
@@ -35,27 +55,30 @@ public class ContaBancaria01 {
         System.out.println("Status Da Conta " + getAtiva());
     }
 
-    public void depositar( float valor) {
+    public void depositar(float valor) {
         if (getAtiva()) {
             setSaldo(this.saldo + valor);
-        }else System.out.println("Conta esta inativa");
+        } else System.out.println("Conta esta inativa");
     }
+
     public void sacar(float valor) {
-        if (getAtiva()){
-         if (valor <= getSaldo()){
-             setSaldo(getSaldo() - valor);
-         }else System.out.println("Saldo Insuficiente");
-        }else System.out.println("Conta esta inativa");
+        if (getAtiva()) {
+            if (valor <= getSaldo()) {
+                setSaldo(getSaldo() - valor);
+            } else System.out.println("Saldo Insuficiente");
+        } else System.out.println("Conta esta inativa");
 
     }
+
     public void ativar() {
-        if (getAtiva()){
+        if (getAtiva()) {
             System.out.println("conta esta ativa");
-        }else setAtiva(true);
+        } else setAtiva(true);
     }
+
     public void desativar() {
-        if (!getAtiva()){
+        if (!getAtiva()) {
             System.out.println("conta esta desativada");
-        }else setAtiva(false);
+        } else setAtiva(false);
     }
 }
