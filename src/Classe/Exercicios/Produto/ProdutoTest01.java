@@ -2,7 +2,7 @@ package Classe.Exercicios.Produto;
 
 public class ProdutoTest01 {
     public static void main(String[] args) {
-        Produto01 produto = new Produto01("Tela", 50);
+        Produto01 produto = new Produto01("Tela", 50f);
         produto.status();
         produto.adicionarEstoque(10);
         produto.status();
